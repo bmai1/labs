@@ -6,7 +6,7 @@ root.title('Fraction Calculator')
 
 mode = "addition"
 
-# recursion
+# recursion for gcd
 def g(b, d):
   if (d == 0):
     return abs(b)
