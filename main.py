@@ -24,14 +24,24 @@ def solve_fraction(a, b, c, d):
         return ''.join((str(c), '/', str(d)))
       elif c == 0:
         return ''.join((str(a), '/', str(b)))
+      
+      # negative second numerator when subtraction
+      if mode == "subtraction":
+        c = 0 - c
       numerator = a * d + b * c
       denominator = b * d
 
     if mode == "multiplication":
+      if a == 0 or c == 0:
+        return '0'
       numerator = a * c
       denominator = b * d
 
     if mode == "division":
+      if a == 0:
+        return '0'
+      if c == 0:
+        return 'Not possible'
       numerator = a * d
       denominator = b * c
 
