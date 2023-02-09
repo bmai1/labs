@@ -44,6 +44,11 @@ def solve_fraction(a, b, c, d):
         return 'Not possible'
       numerator = a * d
       denominator = b * c
+     
+    # cancel double negative
+    if numerator < 0 and denominator < 0:
+      numerator = abs(numerator);
+      denominator = abs(denominator); 
 
     gcd = g(numerator, denominator)
     # reduce fraction using gcd even
