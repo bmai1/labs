@@ -1,3 +1,3 @@
 # tkinter is so bad
-
-basic GUI, reducing fractions using recursive gcd function
+-add, subtract, multiply, divide fractions
+-reduce fractions using naive recursive gcd function
