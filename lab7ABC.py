@@ -19,7 +19,6 @@ def sumSq(n):
       print((i + 1) ** 2, '= ', end='')
   return sum 
 
-
 # Lab 7C
 def rsum_three():
   start = int(input("Start: "))
